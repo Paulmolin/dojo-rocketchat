@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: service-rocketchat
+spec:
+  selector:
+    app: rocketchat-web
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
